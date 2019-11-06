@@ -9,9 +9,9 @@ mongoose.connect(process.env.DATABASE)
   .then(() => console.log('connecting to Mongo Atlas Cluster'))
   .catch(e => console.error(e));
 
-//   mongoose.connection.on('error', (err) => {
-//   console.error(`🙅 🚫 🙅 🚫 🙅 🚫 🙅 🚫 → ${err.message}`);
-// });
+  mongoose.connection.on('error', (err) => {
+  console.error(`🙅 🚫 🙅 🚫 🙅 🚫 🙅 🚫 → ${err.message}`);
+});
 
 // READY?! Let's go!
 

@@ -86,22 +86,3 @@ app.use(errorHandlers.productionErrors);
 
 // done! we export it so we can start the site in start.js
 module.exports = app;
-
-
-const stack = (() => {
-  const sKey = {};
-  const items = new WeakMap();
-  class Stack {
-    constructor() {
-      items.set(sKey, [])
-    }
-
-    push(element) {
-      let stack = items.get(sKey);
-    }
-
-    pop() {
-      let stack = items.get(sKey);
-    }
-  }
-})
