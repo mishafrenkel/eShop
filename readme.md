@@ -19,3 +19,15 @@ That will populate 16 stores with 3 authors and 41 reviews. The logins for the a
 |Wes Bos|wes@example.com|wes|
 |Debbie Downer|debbie@example.com|debbie|
 |Beau|beau@example.com|beau|
+
+## Things to configure
+Setup a MongoDB Atlas account and node before spinning up a local server: https://docs.atlas.mongodb.com/getting-started/
+
+
+## Steps to Run the application locally
+
+	npm install
+
+  npm run dev
+
+  navigate to https://localhost:7777
